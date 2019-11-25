@@ -1,0 +1,36 @@
+<div class="background">
+  <div class="container">
+    <h1 class="text-center orange">Free Calculator</h1>
+    <div
+      class="calculator card mt-3 p-2 mx-auto text-center text-primary bg-dark"
+    >
+      <div>
+        <div class="input-box pt-4">
+          <input type="text" class="result mb-2 py-2 rounded" readonly />
+        </div>
+        <div>
+          <div class="row">
+            <div class="col-md-12">
+              <button
+                *ngFor="let bigButton of bigButtons"
+                class="btn btn-lg orange rounded-circle mb-2 p-2 m-2 "
+              >
+                {{ bigButton }}
+              </button>
+            </div>
+          </div>
+          <div class="row my-auto mx-auto">
+            <div class="col-md-12" *ngFor="let buttonGroup of buttons">
+              <button
+                *ngFor="let button of buttonGroup"
+                class="btn btn-secondary orange rounded-circle p-2 m-2"
+              >
+                {{ button }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

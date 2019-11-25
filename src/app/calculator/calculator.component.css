@@ -1,0 +1,33 @@
+.background {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(62, 83, 107);
+}
+
+.orange {
+  color: #ff7440;
+}
+
+h1 {
+  font-size: 55px;
+}
+
+.calculator {
+  width: 18rem;
+  border: 1px solid black;
+  box-shadow: 5px 5px #888888;
+}
+
+button {
+  height: 40px;
+  width: 40px;
+  box-shadow: 3px 3px #888888;
+}
+
+.btn-lg {
+  width: 75px;
+}
+
+.btn-lg :hover {
+  border: rgba(76, 175, 80, 0.3);
+}
