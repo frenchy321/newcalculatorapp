@@ -6,6 +6,7 @@ import { Component } from "@angular/core";
   styleUrls: ["./calculator.component.css"]
 })
 export class CalculatorComponent {
+  result: string = "";
   bigButtons: string[] = ["AC", "CE"];
   buttons: string[][] = [
     ["7", "8", "9", "/"],
