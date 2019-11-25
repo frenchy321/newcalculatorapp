@@ -14,4 +14,7 @@ export class CalculatorComponent {
     ["1", "2", "3", "-"],
     [".", "0", "=", "+"]
   ];
+
+  private initalValue: string = "";
+  private currentValue: string = "";
 }
