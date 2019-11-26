@@ -1,5 +1,7 @@
 # Newcalculatorapp
 
+This is a basic calculator app for the browser, that i have written to demonstrate my skills using angular.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 
 ## Development server

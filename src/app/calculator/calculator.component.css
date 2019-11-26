@@ -41,3 +41,8 @@ button :hover {
 .btn-lg :hover {
   border: rgba(76, 175, 80, 0.3);
 }
+
+.hidden {
+  height: 100px;
+  background: rgba(62, 83, 107, 0.952);
+}

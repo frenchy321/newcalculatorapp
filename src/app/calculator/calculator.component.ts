@@ -27,7 +27,11 @@ export class CalculatorComponent {
       this.result = "";
     } else if (value === "CE") {
       this.result =
-        this.lastValue != "=" ? this.result.slice(0, 1) : this.result;
+        this.lastValue != "=" ? this.result.slice(0, -1) : this.result;
+    } else if (value === "=") {
+      this.result = eval(this.result);
+    } else {
+      this.result += value;
     }
   }
 }
