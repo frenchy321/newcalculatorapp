@@ -15,8 +15,19 @@ export class CalculatorComponent {
     [".", "0", "=", "+"]
   ];
 
-  private initalValue: string = "";
+  private lastValue: string = "";
   private currentValue: string = "";
 
-  numLogic(value: string) {}
+  numLogic(value: string) {
+    if (this.result != "") {
+      this.lastValue = this.currentValue;
+      this.lastValue = value;
+    }
+    if (value === "AC") {
+      this.result = "";
+    } else if (value === "CE") {
+      this.result =
+        this.lastValue != "=" ? this.result.slice(0, 1) : this.result;
+    }
+  }
 }
