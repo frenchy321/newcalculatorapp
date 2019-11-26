@@ -17,4 +17,6 @@ export class CalculatorComponent {
 
   private initalValue: string = "";
   private currentValue: string = "";
+
+  numLogic(value: string) {}
 }

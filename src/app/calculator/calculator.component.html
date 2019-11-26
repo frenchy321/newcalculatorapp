@@ -18,6 +18,7 @@
             <div class="col-md-12">
               <button
                 *ngFor="let bigButton of bigButtons"
+                (click)="numLogic(bigButton)"
                 class="btn btn-lg orange rounded-circle mb-2 p-2 m-2 "
               >
                 {{ bigButton }}
@@ -28,6 +29,7 @@
             <div class="col-md-12" *ngFor="let buttonGroup of buttons">
               <button
                 *ngFor="let button of buttonGroup"
+                (click)="numLogic(button)"
                 class="btn btn-secondary orange rounded-circle p-2 m-2"
               >
                 {{ button }}
