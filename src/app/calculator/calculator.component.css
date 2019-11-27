@@ -1,3 +1,7 @@
+.orange {
+  color: #ff7440;
+}
+
 .background {
   padding: 0;
   margin: 0;
@@ -5,17 +9,25 @@
   border-bottom: 100px rgba(62, 83, 107, 0.952);
 }
 
-.orange {
-  color: #ff7440;
-}
-
 i {
   font-size: 5em;
   text-align: center;
 }
 
+@media only screen and (max-width: 992px) {
+  i {
+    display: none;
+  }
+}
+
 h1 {
   font-size: 4.5rem;
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 4rem;
+  }
 }
 
 .calculator {
